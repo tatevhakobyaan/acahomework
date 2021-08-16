@@ -69,7 +69,15 @@ s   =   {1,   10,   90,   9}
 
 
 
+n = int(input())
 
+lst4 = []
+
+for i in range(1,n+1):
+ if i%7 == 0:
+  lst4.append(i)
+
+print(lst4)
 
 
 
