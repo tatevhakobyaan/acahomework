@@ -57,7 +57,8 @@ print(maximum_divisors(lst))
 #draw the * Tree with the given base width
 
 
-#n=5;
+n = int(input();
+        
 def right_text(n):
  for i in range(1,n+1,2):
     print('')
@@ -65,9 +66,8 @@ def right_text(n):
         print ('* ', end="")
     print('')
 
-print(right_text(5))
+print(right_text(n))
 
-#def reverse_text
 
 
 #The Goldbach Conjecture
@@ -95,7 +95,9 @@ def two_prime_numbers(y):
         return i, result
 print(two_prime_numbers(n))
 
-
+        
+# Palindrome numbers
+        
 a = int(input())
 b = int(input())
 
@@ -134,7 +136,28 @@ for num in range(len(A)):
 print(B)
 
 
+#Cyclic shift
 
+N = int(input())
+
+A = []
+
+for _ in range(N):
+ A.append(int(input()))
+
+k = int(input())
+
+def shifting(lst):
+  temp = lst[N-1]
+  lst.pop(N-1)
+  lst.insert(0,temp)
+  print(lst)
+
+def cycles(times):
+  for i in range(times):
+    shifting(A)
+
+print(cycles(k))
 
 
 
